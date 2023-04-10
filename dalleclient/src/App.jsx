@@ -11,13 +11,16 @@ const App = () => (
         <img src={logo} alt="logo" className="w-28 object-contain" />
       </Link>
 
-      <Link
-        href="https://chatgptdalle.netlify.app/"
-        className="font-inter flex flex-column font-medium bg-[#f34e64] text-white px-4 py-2 rounded-md mr-2 ml-auto text-xs md:text-lg"
-      >
-        <img src="../favicon.ico" alt="Bot" className="hidden md:block w-5 mr-2"/>
-        ChatGPT
-      </Link>
+      <a href="https://chatgptdalle.netlify.app/">
+        <Link className="font-inter flex flex-column font-medium bg-[#f34e64] text-white px-4 py-2 rounded-md mr-2 ml-auto text-xs md:text-lg">
+          <img
+            src="../favicon.ico"
+            alt="Bot"
+            className="hidden md:block w-5 mr-2"
+          />
+          ChatGPT
+        </Link>
+      </a>
 
       <Link
         to="/create-post"
