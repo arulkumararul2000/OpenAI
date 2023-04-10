@@ -13,6 +13,7 @@ const App = () => (
 
       <Link
         to={{ pathname: "https://chatgptdalle.netlify.app/" }}
+        target="_blank"
         className="font-inter flex flex-column font-medium bg-[#f34e64] text-white px-4 py-2 rounded-md mr-2 ml-auto text-xs md:text-lg"
       >
         <img
