@@ -12,6 +12,7 @@ const App = () => (
       </Link>
 
       <Link
+        to= "https://chatgptdalle.netlify.app/"
         className="font-inter flex flex-column font-medium bg-[#f34e64] text-white px-4 py-2 rounded-md mr-2 ml-auto text-xs md:text-lg"
       >
         <img
@@ -21,8 +22,6 @@ const App = () => (
         />
         ChatGPT
       </Link>
-
-      <Link to={{ pathname: "https://herewecode.io/" }} target="_blank">Click to open HereWeCode (new tab)</Link>
 
       <Link
         to="/create-post"
