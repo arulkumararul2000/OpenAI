@@ -12,7 +12,7 @@ const App = () => (
       </Link>
 
       <Link
-        to= "https://chatgptdalle.netlify.app/"
+        to="/chatgpt"
         className="font-inter flex flex-column font-medium bg-[#f34e64] text-white px-4 py-2 rounded-md mr-2 ml-auto text-xs md:text-lg"
       >
         <img
@@ -33,6 +33,7 @@ const App = () => (
     <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/chatgpt" element={<ChatGPT />} />
         <Route path="/create-post" element={<CreatePost />} />
       </Routes>
     </main>
@@ -40,3 +41,10 @@ const App = () => (
 );
 
 export default App;
+
+function ChatGPT() {
+  // 👇️ redirect to external URL
+  window.location.replace('https://chatgptdalle.netlify.app');
+
+  return null;
+}
